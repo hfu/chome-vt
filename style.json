@@ -1,0 +1,22 @@
+{
+  "version": 8,
+  "sources": {
+    "chome": {
+      "type": "vector",
+      "tiles": ["https://hfu.github.io/chome-vt/{z}/{x}/{y}.mvt"],
+      "maxzoom": 12
+    }
+  },
+  "layers": [
+    {
+      "id": "chome",
+      "type": "fill",
+      "source": "chome",
+      "source-layer": "chome",
+      "paint": {
+        "fill-color": "#5b92e5",
+        "fill-outline-color": "#666"
+      }
+    }
+  ]
+}
