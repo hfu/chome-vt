@@ -28,7 +28,7 @@ map.on('mousemove', function (e) {
     var features = map.queryRenderedFeatures(e.point);
     var s = '';
     for(i in features) {
-      s += JSON.stringify(features[i]['properties'], null, 2);
+      s += JSON.stringify(features[i]['properties'], null, 2) + "\n";
     }
     document.getElementById('features').innerHTML = s;
 });
