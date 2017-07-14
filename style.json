@@ -15,6 +15,7 @@
       "source-layer": "chome",
       "paint": {
         "fill-color": "#5b92e5",
+        "fill-opacity": 0.5,
         "fill-outline-color": "#666"
       }
     }
