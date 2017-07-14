@@ -21,8 +21,9 @@ body { margin:0; padding:0; }
 <pre id='features'/>
 <script>
 var map = new mapboxgl.Map({
-  container: 'map', style: 'style.json', center: [135, 35],
-  zoom: 6, hash: true, maxZoom: 14
+  container: 'map',
+  style: 'https://hfu.github.io/chome-vt/style.json',
+  center: [135, 35], zoom: 6, hash: true, maxZoom: 14
 });
 map.on('mousemove', function (e) {
     var features = map.queryRenderedFeatures(e.point);
