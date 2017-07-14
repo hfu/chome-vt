@@ -12,9 +12,8 @@ body { margin:0; padding:0; }
 #map { position:absolute; top:0; bottom:0; width:100%; }
 #features {
   position: absolute; overflow: auto;
-  top: 0; right: 0; bottom: 0; width: 400px;
-  background: rgba(255, 255, 255, 0.8);
-}
+  top: 0; left: 0; bottom: 0; width: 300px;
+  background: #fff;
 </style>
 </head>
 <body>
@@ -27,7 +26,11 @@ var map = new mapboxgl.Map({
 });
 map.on('mousemove', function (e) {
     var features = map.queryRenderedFeatures(e.point);
-    document.getElementById('features').innerHTML = JSON.stringify(features, null, 2);
+    var s = '';
+    for(i in features) {
+      s += JSON.stringify(features[i]['properties'], null, 2);
+    }
+    document.getElementById('features').innerHTML = s;
 });
 </script>
 </body>
