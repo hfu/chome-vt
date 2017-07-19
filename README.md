@@ -1,5 +1,5 @@
 # chome-vt
-binary vector tiles for https://github.com/nyampire/jp_chome_boundary ; my work is unlicensed.
+binary vector tiles for https://github.com/nyampire/jp_chome_boundary ; my work is released into the public domain.
 
 This dataset is a Produced Work that made from [eStat](https://www.e-stat.go.jp/SG1/estat/eStatTopPortal.do) boundary polygon, 2015.
 
